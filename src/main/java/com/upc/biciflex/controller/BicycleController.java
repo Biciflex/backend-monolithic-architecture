@@ -29,6 +29,7 @@ public class BicycleController {
 
     // URL: http://localhost:8080/api/biciflex/v1/bicycles
     // Method: GET
+    // Fixed
     @Transactional(readOnly = true)
     @GetMapping
     public ResponseEntity<List<Bicycle>> getAllBicycles() {
