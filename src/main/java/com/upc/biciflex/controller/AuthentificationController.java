@@ -37,6 +37,7 @@ public class AuthentificationController {
 
     // URL: http://localhost:8080/api/biciflex/v1/auth/login
     // Method: POST
+    // Fixed
     @Transactional(readOnly = true)
     @PostMapping("/login")
     public ResponseEntity<AuthenticationResponse> login(@RequestBody LoginRequest request) {
