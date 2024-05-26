@@ -26,6 +26,7 @@ public class AuthentificationController {
     private UserRepository userRepository;
     // URL: http://localhost:8080/api/biciflex/v1/auth/register
     // Method: POST
+    // Fixed
     @Transactional
     @PostMapping("/register")
     public ResponseEntity<AuthenticationResponse> registerStudent(@RequestBody RegisterRequest request) {
@@ -37,6 +38,7 @@ public class AuthentificationController {
 
     // URL: http://localhost:8080/api/biciflex/v1/auth/login
     // Method: POST
+    // Fixed
     @Transactional(readOnly = true)
     @PostMapping("/login")
     public ResponseEntity<AuthenticationResponse> login(@RequestBody LoginRequest request) {
