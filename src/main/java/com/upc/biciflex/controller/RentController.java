@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
-//created
+// Created
 import java.util.List;
 @CrossOrigin(origins = "*")
 @RestController
@@ -22,6 +22,7 @@ public class RentController {
 
     // URL: http://localhost:8080/api/biciflex/v1/rents/{rentId}
     // Method: GET
+    // Implemented
     @Transactional(readOnly = true)
     @GetMapping("/{rentId}")
     public ResponseEntity<Rent> getRentById(@PathVariable(name = "rentId") Long rentId) {
