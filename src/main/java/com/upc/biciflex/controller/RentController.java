@@ -31,6 +31,7 @@ public class RentController {
 
     // URL: http://localhost:8080/api/biciflex/v1/rents/bicycle/{bicycleId}
     // Method: GET
+    // Implemented
     @Transactional(readOnly = true)
     @GetMapping("/bicycle/{bicycleId}")
     public ResponseEntity<List<Rent>> getRentByBicycleId(@PathVariable(name = "bicycleId") Long bicycleId) {
