@@ -52,6 +52,7 @@ public class RentController {
 
     // URL: http://localhost:8080/api/biciflex/v1/rents/{rentId}
     // Method: DELETE
+    // Implemented
     @Transactional
     @DeleteMapping("/{rentId}")
     public ResponseEntity<Void> deleteRent(@PathVariable(name = "rentId") Long rentId) {
