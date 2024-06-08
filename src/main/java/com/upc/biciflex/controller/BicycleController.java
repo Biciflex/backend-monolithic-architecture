@@ -13,7 +13,8 @@ import java.time.LocalDate;
 import java.util.List;
 import org.springframework.format.annotation.DateTimeFormat;
 
-
+// Refactor
+// Docs
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/biciflex/v1/bicycles")

@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+// Created
 import java.util.List;
 @CrossOrigin(origins = "*")
 @RestController
@@ -21,6 +22,7 @@ public class RentController {
 
     // URL: http://localhost:8080/api/biciflex/v1/rents/{rentId}
     // Method: GET
+    // Implemented
     @Transactional(readOnly = true)
     @GetMapping("/{rentId}")
     public ResponseEntity<Rent> getRentById(@PathVariable(name = "rentId") Long rentId) {
@@ -29,6 +31,7 @@ public class RentController {
 
     // URL: http://localhost:8080/api/biciflex/v1/rents/bicycle/{bicycleId}
     // Method: GET
+    // Implemented
     @Transactional(readOnly = true)
     @GetMapping("/bicycle/{bicycleId}")
     public ResponseEntity<List<Rent>> getRentByBicycleId(@PathVariable(name = "bicycleId") Long bicycleId) {
@@ -37,6 +40,7 @@ public class RentController {
 
     // URL: http://localhost:8080/api/biciflex/v1/rents
     // Method: POST
+    // Implemented
     @Transactional
     @PostMapping
     public ResponseEntity<Rent> createRent(@RequestBody RentDto rentDto) {
@@ -48,6 +52,7 @@ public class RentController {
 
     // URL: http://localhost:8080/api/biciflex/v1/rents/{rentId}
     // Method: DELETE
+    // Implemented
     @Transactional
     @DeleteMapping("/{rentId}")
     public ResponseEntity<Void> deleteRent(@PathVariable(name = "rentId") Long rentId) {
