@@ -40,6 +40,7 @@ public class RentController {
 
     // URL: http://localhost:8080/api/biciflex/v1/rents
     // Method: POST
+    // Implemented
     @Transactional
     @PostMapping
     public ResponseEntity<Rent> createRent(@RequestBody RentDto rentDto) {
